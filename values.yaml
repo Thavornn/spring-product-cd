@@ -1,0 +1,8 @@
+replicaCount: 1
+image:
+  repository: "pinkmelon/hw-spring-product"
+  tag: "2"
+
+service:
+  type: LoadBalancer
+  port: 9091
