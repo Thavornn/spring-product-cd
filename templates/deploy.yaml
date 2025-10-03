@@ -2,17 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: product-service
-  labels:
-    app: {{ .Chart.Name }}
+  labels: 
+    app: {{ .Values.appName }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: {{ .Chart.Name }}
+      app: {{ .Values.appName }}
   template:
     metadata:
       labels:
-        app: {{ .Chart.Name }}
+        app: {{ .Values.appName }}
     spec:
       containers:
         - name: spring-boot-cd
