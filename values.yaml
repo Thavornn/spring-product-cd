@@ -1,4 +1,5 @@
 replicaCount: 1
+appName: product-spring
 image:
   repository: "pinkmelon/hw-spring-product"
   tag: 9
