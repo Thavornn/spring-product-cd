@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: "pinkmelon/hw-spring-product"
-  tag: 8
+  tag: 9
 
 service:
   type: LoadBalancer
