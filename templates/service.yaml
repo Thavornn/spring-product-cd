@@ -3,11 +3,10 @@ kind: Service
 metadata:
   name: product-service
   labels:
-    app: {{ .Chart.Name }}
+    app: {{ .Values.appName }}
 spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
       targetPort: 9091
-  selector:
-    app: {{ .Chart.Name }}
+
